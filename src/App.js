@@ -20,7 +20,10 @@ render() {
   <div className="app-container">
     <SidebarComponent
       selectedNoteIndex={this.state.selectedNoteIndex}
-      notes={this.state.notes}>
+      notes={this.state.notes}
+      deleteNote={this.deleteNote}
+      selectNote={this.selectNote}
+      newNote={this.newNote}>
 
     </SidebarComponent>
     <EditorComponent></EditorComponent>
@@ -43,6 +46,8 @@ componentDidMount = () =>{
       this.setState({notes: notes});
     });
   }
+
+  selectNote =(note, index) => this.setState({selectedNoteIndex: index, selectedNote: note });
 }
 
 export default App;
