@@ -34,7 +34,7 @@ class SidebarComponent extends React.Component {
         
                             </input>
                             <Button className={classes.newNoteSubmitBtn}
-                            onClick={this.newNote}>Submit NOTE</Button>
+                            onClick={this.newNote}>Submit</Button>
                         </div> : 
                         null
                     }
@@ -79,9 +79,13 @@ class SidebarComponent extends React.Component {
 
     }
     newNote = () =>{
+        if(this.state.title !== null){
         this.props.newNote(this.state.title);
         this.setState({title: null, addingNote: false } );
         console.log(this.state);
+        }
+        else{alert("You Think 😈!! Enter Title.. ");}
+        
 
     }
     selectNote = (n, i) =>{
