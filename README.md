@@ -1,3 +1,14 @@
+*About
+
+this is an app for making  notes.
+this app has been made using React js, HTML, CSS.
+React-Quill has been used to make the components in the app.
+firebase has been used in storing the data in this app.
+it is a single page application.
+the link to the deployed app is  https://evernote-clone-299b0.web.app/
+
+
+
 # Getting Started with Create React App
 ##link https://evernote-clone-299b0.web.app/
 
